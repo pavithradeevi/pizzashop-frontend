@@ -4,6 +4,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { getPizzaById, updatePizza } from "../../actions/pizzaAction";
 import Loader from "./../Loader";
 import Error from "./../Error";
+import { useParams } from 'react-router-dom'
+import Success from "../Success";
 
 const EditPizza = ({ match }) => {
   const [name, setname] = useState("");
@@ -15,12 +17,13 @@ const EditPizza = ({ match }) => {
   const [category, setcategory] = useState("");
   const dispatch = useDispatch();
   const getPizzaByState = useSelector((state) => state.getPizzaByIdReducer);
-  const { error, pizza } = getPizzaByState;
+  const { error,success, pizza } = getPizzaByState;
   const updatePizzaState = useSelector((state) => state.updatePizzaByIdReducer);
   const { updateloading } = updatePizzaState;
+  const params = useParams();
   useEffect(() => {
     if (pizza) {
-      if (pizza._id === match.params.pizzaId) {
+      if (pizza._id === params.pizzaId) {
         setname(pizza.name);
         setdescription(pizza.description);
         setcategory(pizza.category);
@@ -29,16 +32,16 @@ const EditPizza = ({ match }) => {
         setmediumPrice(pizza.prices[0]["medium"]);
         setlargprice(pizza.prices[0]["large"]);
       } else {
-        dispatch(getPizzaById(match.params.pizzaId));
+        dispatch(getPizzaById(params.pizzaId));
       }
     } else {
-      dispatch(getPizzaById(match.params.pizzaId));
+      dispatch(getPizzaById(params.pizzaId));
     }
-  }, [pizza, dispatch, match.params.pizzaId]);
+  }, [pizza, dispatch, params.pizzaId]);
   const submitForm = (e) => {
     e.preventDefault();
     const updatedPizza = {
-      _id: match.params.pizzaId,
+      _id:params.pizzaId,
       name,
       image,
       description,
@@ -55,7 +58,7 @@ const EditPizza = ({ match }) => {
     <div>
       {updateloading && <Loader />}
       {error && <Error error="add new pizza error" />}
-      {/* {success && <Success success="Pizza Added Successfully" />} */}
+      {success && <Success success="Pizza Added Successfully" />}
       <Form onSubmit={submitForm} className="bg-light p-4">
         <Row className="mb-3">
           <Form.Group as={Col} controlId="formGridEmail">

@@ -37,7 +37,7 @@ export const updatePizza = (updatedPizza) => async (dispatch) => {
       updatedPizza,
     });
     dispatch({ type: "UPDATE_PIZZABYID_SUCCESS", payload: response.data });
-    window.location.href = "/admin/pizzalist";
+    window.location.href = "/admin/pizzaslist";
   } catch (err) {
     dispatch({ type: "UPDATE_PIZZABYID_FAIL", payload: err });
   }
@@ -47,7 +47,7 @@ export const deletePizza = (pizzaId) => async (dispatch) => {
   try {
     await axios.post("http://localhost:8080/api/pizzas/deletepizza", { pizzaId });
     swal("Pizza Deleted Succss!", "success");
-    window.location.href = "/admin/pizzalist";
+    window.location.href = "/admin/pizzaslist";
     // console.log(res);
   } catch (error) {
     swal("Errro While Deleteing Pizza");
