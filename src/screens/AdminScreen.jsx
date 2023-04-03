@@ -46,7 +46,7 @@ const AdminScreen = ({ history }) => {
           </Col>
           <Col md={10}>
             <Routes>
-              <Route path="/admin" component={Userlist} exact />
+              <Route path="/admin" element={Userlist} exact />
               <Route path="/admin/userlist" component={Userlist} exact />
               
               <Route
@@ -54,7 +54,7 @@ const AdminScreen = ({ history }) => {
                 component={EditPizza}
                 exact
               />
-              <Route path="/admin/pizzaslist" component={Pizzaslist} exact />
+              <Route path="/admin/pizzaslist" element={Pizzaslist} exact />
               <Route path="/admin/addnewpizza" component={AddNewPizza} exact />
               <Route path="/admin/orderlist" component={OrderList} exact />
             </Routes>

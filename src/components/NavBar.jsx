@@ -52,6 +52,9 @@ const NavBar = () => {
               <LinkContainer to="/cart">
                 <Nav.Link>Cart {cartState.cartItems.length}</Nav.Link>
               </LinkContainer>
+              <LinkContainer to="/admin">
+                <Nav.Link>Admin</Nav.Link>
+              </LinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Container>
