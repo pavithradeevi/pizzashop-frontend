@@ -3,7 +3,7 @@ import swal from "sweetalert";
 export const getAllPizzas = () => async (dispatch) => {
   dispatch({ type: "GET_PIZZAS_REQUEST" });
   try {
-    const response = await axios.get("http://localhost:8080/api/pizzas/getAllPizzas");
+    const response = await axios.get("https://pizzashop-g73f.onrender.com/api/pizzas/getAllPizzas");
     // console.log(response.data);
     dispatch({ type: "GET_PIZZAS_SUCCESS", payload: response.data });
   } catch (err) {
@@ -24,7 +24,7 @@ export const addPizza = (pizza) => async (dispatch) => {
 export const getPizzaById = (pizzaId) => async (dispatch) => {
   dispatch({ type: "GET_PIZZABYID_REQUEST" });
   try {
-    const response = await axios.post("http://localhost:8080/api/pizzas/getpizzabyid", { pizzaId });
+    const response = await axios.post("https://pizzashop-g73f.onrender.com/api/pizzas/getpizzabyid", { pizzaId });
     dispatch({ type: "GET_PIZZABYID_SUCCESS", payload: response.data });
   } catch (err) {
     dispatch({ type: "GET_PIZZABYID_FAIL", payload: err });
@@ -45,7 +45,7 @@ export const updatePizza = (updatedPizza) => async (dispatch) => {
 
 export const deletePizza = (pizzaId) => async (dispatch) => {
   try {
-    await axios.post("http://localhost:8080/api/pizzas/deletepizza", { pizzaId });
+    await axios.post("https://pizzashop-g73f.onrender.com/api/pizzas/deletepizza", { pizzaId });
     swal("Pizza Deleted Succss!", "success");
     window.location.href = "/admin/pizzaslist";
     // console.log(res);
@@ -58,7 +58,7 @@ export const filterPizza = (searchkey, category) => async (dispatch) => {
   let filterdPizza;
   dispatch({ type: "GET_PIZZAS_REQUEST" });
   try {
-    const res = await axios.get("http://localhost:8080/api/pizzas/getAllPizzas");
+    const res = await axios.get("https://pizzashop-g73f.onrender.com/api/pizzas/getAllPizzas");
     filterdPizza = res.data.filter((pizza) =>
       pizza.name.toLowerCase().includes(searchkey)
     );

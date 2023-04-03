@@ -14,7 +14,7 @@ const NavBar = () => {
         <Container>
           <Navbar.Brand>
             <Image
-              src="images/logo.png"
+              src="https://thumbs.dreamstime.com/b/restaurant-chef-food-service-catering-design-menu-hotel-fork-spoon-icon-logo-illustration-ai-white-background-plate-cook-169417051.jpg"
               alt="logo"
               style={{ height: "50px" }}
             />

@@ -5,64 +5,31 @@ export default function About() {
   return (
     <>
       <Container style={{ marginTop: "50px" }}>
-        <h1>Whoe we are</h1>
+        <h1>When Is It Time to Sell?</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi eveniet
-          unde vel dignissimos. Cum minima iste quaerat sequi, eum aspernatur
-          dignissimos magni impedit repudiandae, quidem laudantium accusamus
-          modi, ipsa quae! Facilis ducimus vero saepe illo consectetur.
-          Assumenda vel, temporibus voluptatibus possimus eaque beatae
-          distinctio excepturi eos sint dolore ut architecto iure doloribus
-          debitis similique impedit culpa alias voluptatum ab magni odio quia.
-          Suscipit in tempore alias aut nemo minus velit commodi perspiciatis
-          molestias unde doloremque placeat officia quaerat fuga nisi modi vitae
-          consequuntur, illum harum dolore asperiores at illo itaque! Accusamus
-          sed cumque, quo veniam iure aperiam quod dolorem, unde magnam nobis
-          ullam repudiandae repellat! Cumque, beatae explicabo totam quae
-          incidunt voluptates sit nisi aspernatur tenetur rerum molestiae
-          assumenda in autem commodi, doloribus tempora dolor ab eligendi? Amet
-          voluptatem expedita architecto odit possimus, aperiam commodi ullam
-          accusantium nam magni, placeat error ipsum temporibus nihil molestias
-          a minima hic sapiente at est quae porro. Iste iusto provident, totam
-          laborum in molestiae officia voluptatum quis fugiat ullam amet
-          accusantium ipsam aliquid nisi quaerat a repudiandae consequatur
-          reprehenderit. Ea itaque cupiditate vel sequi blanditiis deleniti hic
-          ipsum eaque officiis adipisci omnis, deserunt rerum, laudantium, et
-          impedit quos a eius soluta ut dolore esse.
+        The process of positioning your restaurant for sale can never start too early. However, regardless of when the process begins, your business will be valued based on the prior year’s financial performance. So, if the goal is to maximize the payout on the sale, then you will want at least two years of financials and, ideally, a positive gross-revenue growth trend. This will make your restaurant more appealing to potential buyers and, simply put, a pizzeria that makes money is easier to sell than one that does not.
+
+Selling a restaurant is a full-time job. Between marketing the business with a level of confidentiality and vetting the financial position of the buyers, there is not much time to spend actively running your pizzeria. As an owner, the last thing you would want is for your business to suffer because your time has shifted to selling the business rather than running it.
+
+Contacting a professional business broker to provide an opinion of value and guidance will serve you well, 
+as your focus can be the continued success of the business 
+while your agent works to bring in qualified buyers for its purchase.
         </p>
-        <h1>Our Speciality</h1>
+        <h1>Manage Expectations</h1>
         <Row>
           <Col md={6}>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque in
-              quibusdam deserunt tempore enim veritatis ducimus facilis cum
-              animi ex eius doloribus ratione illo, laborum laboriosam!
-              Consequatur maxime placeat, voluptatum veniam quisquam deleniti
-              laudantium repellendus rerum vitae minima dolorum, earum sapiente
-              rem reiciendis voluptas sunt sed repudiandae eaque! Quas adipisci
-              recusandae debitis officia delectus aliquam id harum quis
-              consequuntur vero, iste maxime eius ullam, praesentium qui ut sit
-              consectetur. Quis provident libero ad veniam possimus minus, nulla
-              molestias. Sapiente ipsa amet odio at omnis natus provident
-              eveniet nam aperiam reiciendis nostrum distinctio ea illum
-              accusantium labore, sed quisquam, temporibus vitae.
+            It is rare to find an owner who can objectively price their business, especially since they are not actively selling different types of pizzerias regularly and it’s difficult to remove one’s emotions from the valuation. Like all economics, the market sets the price at which the business will sell, and there are a number of variables that either add value to or reduce value from your business.
+
+A helpful exercise involves putting yourself in the position of a prospective buyer. Ask yourself the tough questions and look objectively at your role as the owner, number of hours you put in the business a week, duties and responsibilities, and the net income. If you have a sale price you believe you “should” get for your business, ask yourself: Would I pay that amount to have to do all the 
+work I currently do to make my level of net income?
             </p>
           </Col>
           <Col md={6}>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam dignissimos recusandae doloremque mollitia dolorem
-              debitis animi. Natus tempore facere perferendis consequuntur quae
-              temporibus dignissimos velit! Dicta aliquam sint recusandae
-              dignissimos neque quia repellendus dolorum autem aspernatur
-              repudiandae similique hic possimus, repellat voluptatibus
-              architecto voluptate consectetur, amet ducimus eos fugiat
-              asperiores. Quae maiores quis animi sit optio dicta aperiam nulla
-              magnam quisquam rem deserunt explicabo, itaque obcaecati iste. Eum
-              corrupti voluptas veritatis neque sunt recusandae temporibus
-              maiores, mollitia facilis repudiandae magni ipsum iste, voluptates
-              ratione rerum quo dolorem aut impedit omnis reiciendis dolores
-              nam. Accusamus ratione sapiente minima vero ex consequatur.
+            For example, if you wanted $250,000 for your pizza shop and you consistently made $80,000 a year working 40+ hours a week, ask yourself: Would I pay $250,000 to buy myself a job that pays $80,000 a year? This is the first question any buyer will ask themselves when presented with the asking price and cashflow amount of a business on the market.
+
+Working with your broker, you will gain a better understanding of the market and how potential buyers approach a purchase—thus helping to put all the pieces in place to increase the appeal of your business for acquisition.
             </p>
           </Col>
         </Row>

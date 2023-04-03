@@ -48,6 +48,8 @@ const Login = () => {
           <Button variant="primary" onClick={loginHandler}>
             Login
           </Button>
+          <p>Username : admin@gmail.com</p>
+          <p>Password: admin12345</p>
         </Form>
       </Container>
     </>
